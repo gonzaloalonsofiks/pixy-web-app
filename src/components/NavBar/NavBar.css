@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif; ;
+}
+
+.header-row{
+    background-color: #5064de;
+    height: 75px;
+    width: 100%;
+    display: block;
+}
+
+.header-container{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1120px;
+    color: #fff;
+}
+
+#nav-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    height: 45px;
+}
+
+#nav-right{
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-right ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    color: #fff;
+}
+
+#nav-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-items{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item{
+    list-style-type: none;
+    margin-right: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 18px 16px;
+    text-align: center;
+}
+
+.menu-items ul a{
+    text-decoration: none;
+}
+
+.menu-items ul a:hover{
+    background-color: rgba(255, 255, 255, 0.1)
+}
