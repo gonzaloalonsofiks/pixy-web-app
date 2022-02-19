@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Proyecto Final React"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "E-commerce Pixy (Alonso Fiks)"
+	}
+}

@@ -1,0 +1,21 @@
+.shoppingCart-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: solid 1px #fff;
+    padding: 10px 20px;
+    border-radius: 22px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.shoppingCart-container:hover{
+    background-color: #f46f34;
+    border: solid 1px #f46f34;
+    transition: 0.5s;
+}
+
+.shoppingCart-icon{
+    height: 24px;
+    width: 24px;
+}
