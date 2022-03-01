@@ -1,0 +1,67 @@
+.itemCount-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemCount-carousel{
+    margin: 25px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemCount-count{
+    border: solid 1px #000;
+    border-radius: 22px;
+    padding: 10px 20px;
+    width: 75px;
+    margin: 0px 5px;
+    font-weight: 600;
+}
+
+.itemCount-control{
+    width: 24px;
+    height: 24px;
+    color: #f46f34;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    transition: 0s;
+}
+
+.itemCount-control:hover{
+    background-color: #f46f34;
+    color: #fff;
+    transition-duration: 0.25s;
+}
+
+.addToCart{
+    color: #f46f34;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    width: 150px;
+    transition: 0s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.addToCart:hover{
+    border-bottom: 3px solid #f46f34;
+    transition-duration: 0.1s;
+}

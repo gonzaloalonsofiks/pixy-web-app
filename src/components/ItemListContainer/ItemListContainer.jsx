@@ -2,6 +2,7 @@ import React from 'react'
 import './ItemListContainer.css'
 import heroImg from '../../img/hero-img.png'
 import ServicesList from './ServicesList/ServicesList'
+import ItemCount from './ItemCount/ItemCount'
 
 function ItemListContainer() {
   return (
@@ -25,6 +26,7 @@ function ItemListContainer() {
                 <p className="services-subtitle">No importa el tamaño de tu proyecto, tenemos un plan que se adapta a lo que necesitás.</p>
                 <div className="servicesList-container">
                     <ServicesList serviceCount={ 4 }/>
+                    <ItemCount />
                 </div>
             </div>
         </section>
