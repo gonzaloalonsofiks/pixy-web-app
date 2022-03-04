@@ -4,7 +4,7 @@ import React from 'react'
 
 function ServicesList({serviceCount}) {
   return (
-    <div>Contamos con {serviceCount} paquetes disponibles para tu negocio.</div>
+    <div>Contamos con {serviceCount} servicios adicionales disponibles para tu negocio.</div>
   )
 }
 
