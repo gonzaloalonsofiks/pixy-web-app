@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Dominio .com.ar",
+      "description": "Dominio web terminado en .com.ar",
+      "price": 475,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png"
+    },
+    {
+      "id": 2,
+      "name": "Landing page",
+      "description": "Página de destino para tus campañas",
+      "price": 4500,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png"
+    },
+    {
+      "id": 3,
+      "name": "Hora de Soporte Técnico",
+      "description": "Soporte técnico para tu sitio",
+      "price": 2750,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png"
+    }
+  ]
