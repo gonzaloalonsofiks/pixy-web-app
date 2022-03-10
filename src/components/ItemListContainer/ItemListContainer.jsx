@@ -1,25 +1,12 @@
 import React from 'react'
 import './ItemListContainer.css'
-import heroImg from '../../img/hero-img.png'
+
 import ServicesList from './ServicesList/ServicesList'
 import ItemList from './ItemList/ItemList'
 
 function ItemListContainer() {
   return (
     <main>
-        <section className="container container-hero">
-            <div id="hero">
-                <div className="hero-column hero-column-left">
-                    <h1 className="hero-title">Alojamiento web para tu sitio</h1>
-                    <p className="hero-subtitle">Simple. Rápido. Y en pesos.</p>
-                </div>
-
-                <div className="hero-column">
-                    <img className="hero-image" src={ heroImg } alt="Ilustración de un hombre organizando servidores de alojamiento web" />
-                </div>
-            </div>
-        </section>
-
         <section id="webHosting" className="container container-services">
             <div id="services">
                 <h2 className="services-title">Web hosting para tu sitio</h2>
@@ -27,7 +14,6 @@ function ItemListContainer() {
                 <div className="servicesList-container">
                     <ServicesList serviceCount={ 3 }/>
                     <ItemList />
-                    <productLoad />
                 </div>
             </div>
         </section>
