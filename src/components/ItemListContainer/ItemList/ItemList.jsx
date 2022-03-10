@@ -18,7 +18,14 @@ function ItemList() {
 
   return (
     <div className='serviceList-container'>
-        {services.map((service) => <Item key={service.id} name={service.name} description={service.description} price={service.price} img={service.img} />)}
+        {services.map((service) =>
+          <Item
+            key={service.id}
+            name={service.name}
+            description={service.description}
+            price={service.price}
+            img={service.img}
+          />)}
     </div>
   )
 }

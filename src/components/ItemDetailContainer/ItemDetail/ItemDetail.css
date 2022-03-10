@@ -1,0 +1,35 @@
+.itemDetail-container{
+    max-width: 1120px;
+    margin: 0 auto 100px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.itemDetail-col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemDetail-image{
+    width: 450px;
+}
+
+.itemDetail-text h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #5064de;
+    margin-bottom: 25px;
+}
+
+.itemDetail-text p{
+    font-size: 18px;
+}
+
+.itemDetail-price{
+    color: #f46f34;
+    font-size: 28px;
+    font-weight: 700;
+}
