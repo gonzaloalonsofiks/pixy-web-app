@@ -1,15 +1,18 @@
 import React from 'react'
-import ItemCount from '../ItemCount/ItemCount'
+import { Link } from 'react-router-dom'
 import './Item.css'
 
-function Item(service) {
+function Item(singleService) {
+
   return (
-    <div className="service-container">
-        <h3 className="service-name">{service.name}</h3>
-        <img className="service-icon" src={service.img} alt="Img" />
-        <p className="service-description">{service.description}</p>
-        <p className="service-price">${service.price}</p>
-        <ItemCount />
+    <div className="service-container" key={singleService.id}>
+        <h3 className="service-name">{singleService.name}</h3>
+        <img className="service-icon" src={singleService.icon} alt="Img" />
+        <p className="service-description">{singleService.description}</p>
+        <p className="service-price">${singleService.price}</p>
+        <Link to={`detalle/${singleService.id}`} className="service-details-btn">
+          <p>Ver detalles</p>
+        </Link>
     </div>
   )
 }

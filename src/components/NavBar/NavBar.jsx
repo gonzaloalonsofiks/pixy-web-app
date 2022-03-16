@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../img/Pixy Light.png';
 import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css'
@@ -10,20 +11,22 @@ function NavBar() {
         <div className="header-row">
             <header className="header-container">
                 <div id="nav-left">
-                    <a href="#">
-                      <img className="logo" src={ logo } alt="" />
-                    </a>
+                    <NavLink to={'/'}>
+                      <img className="logo" src={ logo } alt="Logo de Pixy" />
+                    </NavLink>
                 </div>
                 <div id="nav-middle"></div>
                 <div id="nav-right">
                   <nav id="nav-menu">
                     <div className="menu-items">
                       <ul>
-                          <a href="#"><li className="menu-item">Inicio</li></a>
-                          <a href="#"><li className="menu-item">Alojamiento web</li></a>
-                          <a href="#"><li className="menu-item">Soporte</li></a>
-                          <a href="#"><li className="menu-item">Contacto</li></a>
-                          <CartWidget />
+                          <NavLink to={'/'}><li className="menu-item">Inicio</li></NavLink>
+                          <NavLink to={'/categoria/dominios'}><li className="menu-item">Dominios</li></NavLink>
+                          <NavLink to={'/categoria/desarrollo-web'}><li className="menu-item">Desarollo web</li></NavLink>
+                          <NavLink to={'/categoria/soporte'}><li className="menu-item">Soporte</li></NavLink>
+                          <NavLink to={'/carrito'}>
+                            <CartWidget />
+                          </NavLink>
                       </ul>
                     </div>
                   </nav>
