@@ -1,29 +1,19 @@
 import React from 'react'
 import Item from '../Item/Item'
 import '../ItemList/ItemList.css'
-import productLoad from '../../../functions'
-import {useState, useEffect} from 'react'
 
-function ItemList() {
-  const [services, setServices] = useState([])
 
-  useEffect(() => {
-    productLoad
-    .then((response) => {
-        setServices(response)
-      })
-    .catch((error) => {console.log(error)})
-  })
-
+function ItemList({services}) {
 
   return (
     <div className='serviceList-container'>
         {services.map((service) =>
           <Item
-            key={service.id}
+            id={service.id}
             name={service.name}
             description={service.description}
             price={service.price}
+            icon={service.icon}
             img={service.img}
           />)}
     </div>

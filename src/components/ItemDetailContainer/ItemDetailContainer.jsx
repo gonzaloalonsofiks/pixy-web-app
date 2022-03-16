@@ -1,22 +1,26 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react/cjs/react.development'
 import productLoad from '../../functions'
 import ItemDetail from './ItemDetail/ItemDetail'
 
 export const ItemDetailContainer = () => {
 
-    //Llamada a la API
-    const [service, setService] = useState({})
+    const [singleService, setSingleService] = useState({})
+    const {detailID} = useParams()
 
     useEffect(() => {
       productLoad
-      .then(resolve => setService(resolve.find(service => service.id === 1)))
+      .then((response) => setSingleService(response.find(service => service.id == detailID)))
+      .catch((error) => console.log(error))
+      return () => {
+      }
     }, [])
 
 
   return (
     <div>
-        <ItemDetail service = {service}/>
+        <ItemDetail singleService = {singleService}/>
     </div>
   )
 }

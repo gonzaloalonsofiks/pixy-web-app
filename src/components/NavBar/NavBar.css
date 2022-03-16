@@ -79,6 +79,6 @@ nav{
     text-decoration: none;
 }
 
-.menu-items ul a:hover{
-    background-color: rgba(255, 255, 255, 0.1)
+.menu-items li:hover{
+    border-bottom: 1px solid #fff;
 }
