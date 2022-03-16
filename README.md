@@ -1,4 +1,5 @@
-#Sobre el proyecto
+# Sobre el proyecto
+
 Este proyecto web, basado en React, es una réplica del sitio web de [Pixy](pixy.com.ar), e intenta replicar algunas de las funcionalidades del sitio actual.
 
 ![Pixy web app](./public/ezgif.com-gif-maker.gif)
