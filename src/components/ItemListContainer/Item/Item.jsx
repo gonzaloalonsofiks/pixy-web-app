@@ -5,12 +5,12 @@ import './Item.css'
 function Item(singleService) {
 
   return (
-    <div className="service-container" key={singleService.id}>
+    <div className="service-container">
         <h3 className="service-name">{singleService.name}</h3>
         <img className="service-icon" src={singleService.icon} alt="Img" />
         <p className="service-description">{singleService.description}</p>
         <p className="service-price">${singleService.price}</p>
-        <Link to={`detalle/${singleService.id}`} className="service-details-btn">
+        <Link to={`/detalle/${singleService.id}`} className="service-details-btn">
           <p>Ver detalles</p>
         </Link>
     </div>

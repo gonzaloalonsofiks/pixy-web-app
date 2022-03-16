@@ -2,21 +2,18 @@ import {useState} from 'react'
 import React from 'react'
 import './ItemCount.css'
 
-function ItemCount() {
-    const [count, setcount] = useState(1);
-
-    let maxQuantity = 10;
-    let minQuantity = 1;
+function ItemCount({init, limit, onAdd}) {
+    const [count, setcount] = useState(init);
 
 
     const increaseCount = () => {
-        if (count < maxQuantity) {
+        if (count < limit) {
             setcount(count +1)
         }
     }
 
     const decreaseCount = () => {
-        if (count > minQuantity){
+        if (count > init){
             setcount(count -1)
         }
     }
@@ -27,6 +24,7 @@ function ItemCount() {
         }
         else{
             console.log(count + " unidad/es agregada/s al carrito.")
+            onAdd(count)
         }
     }
 
