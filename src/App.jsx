@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import HeroSection from './components/HeroSection/HeroSection';
 import './App.css';
+import { Cart } from './components/Cart/Cart';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path={'/'} element={[<HeroSection />, <ItemListContainer />]} />
         <Route path={'/categoria/:categoryID'} element={<ItemListContainer />} />
         <Route path={'/detalle/:detailID'} element={<ItemDetailContainer />} />
-        {/* <Route path={'/cart'} element={<Cart />} /> */}
+        <Route path={'/cart'} element={<Cart />} />
 
         <Route path='/*' element={<Navigate to='/' replace/> }/>
 
