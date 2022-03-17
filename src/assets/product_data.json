@@ -25,5 +25,32 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
       "category": "soporte"
+    },
+    {
+      "id": 4,
+      "name": "Hora de Soporte Técnico",
+      "description": "Soporte técnico para tu sitio",
+      "price": 2750,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
+      "category": "soporte"
+    },
+    {
+      "id": 5,
+      "name": "Hora de Soporte Técnico",
+      "description": "Soporte técnico para tu sitio",
+      "price": 2750,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
+      "category": "soporte"
+    },
+    {
+      "id": 6,
+      "name": "Hora de Soporte Técnico",
+      "description": "Soporte técnico para tu sitio",
+      "price": 2750,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
+      "category": "soporte"
     }
   ]

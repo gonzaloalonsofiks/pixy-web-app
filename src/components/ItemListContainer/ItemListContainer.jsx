@@ -34,7 +34,7 @@ function ItemListContainer() {
   }, [categoryID])
 
   return (
-    <main>
+    <main className="container-services">
         <ServicesList serviceCount={ 3 }/>
           {
             loading ? <p>Cargando...</p>

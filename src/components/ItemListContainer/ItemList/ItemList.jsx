@@ -9,12 +9,14 @@ function ItemList({services}) {
     <div className='serviceList-container'>
         {services.map((service) =>
           <Item
+            key={service.id}
             id={service.id}
             name={service.name}
             description={service.description}
             price={service.price}
             icon={service.icon}
             img={service.img}
+            category={service.category}
           />)}
     </div>
   )
