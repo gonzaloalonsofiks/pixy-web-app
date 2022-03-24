@@ -1,0 +1,33 @@
+.cartList-container{
+    width: 1120px;
+    margin: 50px auto;
+}
+
+.cartList-table{
+    width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.secondary-cta{
+    color: #ababab;
+    border-bottom: 1px solid #ababab;
+    padding-bottom: 5px;
+    width: 120px;
+    cursor: pointer;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.cartList-row, .cartList-headings > li{
+    list-style-type: none;
+    margin-right: 150px;
+}
+
+.cartList-headings{
+    font-weight: 600;
+}
+
+.cartList-row td{
+    font-weight:400;
+}
