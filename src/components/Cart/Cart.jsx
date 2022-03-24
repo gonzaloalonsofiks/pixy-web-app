@@ -1,7 +1,18 @@
-import React from 'react'
+/* import { useCartContext } from "../../contexts/cartContext" */
 
-export const Cart = () => {
+
+function Cart() {
+
+/*   const {cartList, emptyCart} = useCartContext()
+  console.log(cartList) */
+
+
   return (
-    <div>Cart</div>
+    <div>
+      Este es el carrito
+      {/* {cartList.map(item => <li>{item.name}</li>)} */}
+    </div>
   )
 }
+
+export default Cart
