@@ -4,28 +4,29 @@ const CartContext = createContext([])
 
 export const useCartContext = () => {
     useContext(CartContext)
+    return useContext(CartContext)
 }
 
 function CartContextProvider({children}) {
     const [cartList, setCartList] = useState([])
 
     const addToList = (item) => {
-        setCartList([... cartList, item])
+        if (cartList.find(e => e = item)) {
+            console.log('Ya está agregado')
+        }else{
+            setCartList([...cartList, item])
+        }
     }
 
     const emptyCart = () => {
         setCartList([])
     }
 
-    const userName = "Gonzalo"
-
     return (
-
         <CartContext.Provider value={{
             cartList,
             addToList,
-            emptyCart,
-            userName }}>
+            emptyCart}}>
             {children}
         </CartContext.Provider>
   )

@@ -24,7 +24,7 @@ function NavBar() {
                           <NavLink to={'/categoria/dominios'}><li className="menu-item">Dominios</li></NavLink>
                           <NavLink to={'/categoria/desarrollo-web'}><li className="menu-item">Desarollo web</li></NavLink>
                           <NavLink to={'/categoria/soporte'}><li className="menu-item">Soporte</li></NavLink>
-                          <NavLink to={'/carrito'}>
+                          <NavLink to={'/cart'}>
                             <CartWidget />
                           </NavLink>
                       </ul>
