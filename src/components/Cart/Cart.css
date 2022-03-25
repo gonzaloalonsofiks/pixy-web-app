@@ -15,7 +15,17 @@
     padding-bottom: 5px;
     width: 120px;
     cursor: pointer;
-    margin: 50px auto;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.primary-cta{
+    color: #252525;
+    border-bottom: 1px solid #252525;
+    padding-bottom: 5px;
+    width: 200px;
+    cursor: pointer;
+    margin: 50px auto 0px auto;
     text-align: center;
 }
 
@@ -30,4 +40,10 @@
 
 .cartList-row td{
     font-weight:400;
+}
+
+.cartList-remove{
+    width: 24px;
+    color: red;
+    cursor: pointer;
 }

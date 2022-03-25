@@ -28,27 +28,27 @@
     },
     {
       "id": 4,
-      "name": "Hora de Soporte Técnico",
+      "name": "2 Horas de Soporte Técnico",
       "description": "Soporte técnico para tu sitio",
-      "price": 2750,
+      "price": 3590,
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
       "category": "soporte"
     },
     {
       "id": 5,
-      "name": "Hora de Soporte Técnico",
+      "name": "Integración de WhatsApp",
       "description": "Soporte técnico para tu sitio",
-      "price": 2750,
+      "price": 5500,
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
       "category": "soporte"
     },
     {
       "id": 6,
-      "name": "Hora de Soporte Técnico",
+      "name": "Solución de bugs",
       "description": "Soporte técnico para tu sitio",
-      "price": 2750,
+      "price": 6500,
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/How_to_use_icon.svg/2214px-How_to_use_icon.svg.png",
       "category": "soporte"
