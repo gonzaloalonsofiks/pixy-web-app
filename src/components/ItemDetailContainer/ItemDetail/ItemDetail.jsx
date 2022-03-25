@@ -1,6 +1,5 @@
-import {useState, useContext} from 'react'
+import {useState} from 'react'
 import { Link } from 'react-router-dom'
-/* import CartContext from '../../../contexts/cartContext'*/
 import ItemCount from '../../ItemListContainer/ItemCount/ItemCount'
 import { useCartContext } from '../../../contexts/cartContext'
 import './ItemDetail.css'
@@ -9,18 +8,14 @@ const ItemDetail = ({singleService}) => {
 
     const [count, setCount] = useState(null)
 
-    const {addToList, cartList} = useCartContext()
-
-    /* const {userName} = useContext(CartContext) */
-    /* const {name} = useContext(CartContext)
-    console.log(name) */
+    const {addToList} = useCartContext()
 
     const onAdd = (quantity) =>{
-        console.log(quantity)
+        /* console.log(quantity) */
         setCount(quantity)
         addToList({... singleService, cantidad: quantity})
     }
-    console.log(cartList)
+    /* console.log(cartList) */
 
     return (
     <div className="itemDetail-container" >

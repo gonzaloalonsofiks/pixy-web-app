@@ -7,6 +7,8 @@ import Cart  from './components/Cart/Cart';
 import CartContextProvider from './contexts/cartContext';
 import './App.css';
 
+
+
 function App() {
   return (
       <CartContextProvider>
