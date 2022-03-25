@@ -10,11 +10,16 @@ export const useCartContext = () => {
 function CartContextProvider({children}) {
     const [cartList, setCartList] = useState([])
 
+    const isInCart = (id) => {
+        return cartList.some((item) => item.id === id)
+    }
+
     const addToList = (item) => {
-        if (cartList.find(e => e = item)) {
-            console.log('Ya está agregado')
-        }else{
-            setCartList([...cartList, item])
+        if (isInCart(item.id)){
+            let itemIndex = cartList.findIndex(prod => prod.id === item.id)
+            cartList[itemIndex].cantidad += item.cantidad
+        } else {
+            setCartList ([...cartList, item])
         }
     }
 
