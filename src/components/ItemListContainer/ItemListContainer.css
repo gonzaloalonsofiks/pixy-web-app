@@ -1,6 +1,5 @@
 .container{
     width: 100%;
-    min-height: 400px;
     padding: 75px 0px;
 }
 
@@ -10,6 +9,8 @@
 
 .container-services{
     background-color: #fafafa;
+    margin: 0 auto;
+    max-width: 1120px;
 }
 
 #hero{
@@ -72,4 +73,5 @@
 
 .servicesList-container{
     padding: 75px 0;
+    margin-bottom: 75px;
 }

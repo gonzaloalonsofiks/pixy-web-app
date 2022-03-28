@@ -5,6 +5,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import HeroSection from './components/HeroSection/HeroSection';
 import Cart  from './components/Cart/Cart';
 import CartContextProvider from './contexts/cartContext';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 
@@ -24,6 +25,7 @@ function App() {
                 <Route path='/*' element={<Navigate to='/' replace/> }/>
 
             </Routes>
+            <Footer />
         </BrowserRouter>
       </CartContextProvider>
 
