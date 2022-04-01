@@ -1,9 +1,7 @@
 import { useCartContext } from "../../contexts/cartContext";
-import { useState } from "react";
 import { AiFillDelete } from "react-icons/ai";
-import "./Cart.css";
-import { useEffect } from "react/cjs/react.development";
 import { Link } from "react-router-dom";
+import "./Cart.css";
 
 function Cart() {
   const { cartList, emptyCart, subtotal, removeItem, totalCart } =
@@ -12,7 +10,9 @@ function Cart() {
   if (cartList.length === 0) {
     return (
       <>
-        <p>Tu carrito está vacío. ¿Elegimos algunos prodcutos?</p>
+        <h1>Carrito</h1>
+
+        <p>Tu carrito está vacío. ¿Elegimos algunos servicios?</p>
         <Link to="/">Ir al Inicio</Link>
       </>
     );
@@ -44,17 +44,19 @@ function Cart() {
                     <AiFillDelete />{" "}
                   </span>
                 </td>
-                <td>{item.cantidad}</td>
+                <td>{item.quantity}</td>
                 <td>{item.name}</td>
                 <td>$ {item.price}</td>
-                <td>$ {subtotal(item.cantidad, item.price)}</td>
+                <td>$ {subtotal(item.quantity, item.price)}</td>
               </tr>
             ))}
           </table>
           <div>Total: $ {totalCart()}</div>
-        </div>
-        <div>
-          <div className="primary-cta">Terminar mi compra</div>
+
+          {/* <div className="primary-cta" onClick={}>
+            Terminar mi compra
+          </div> */}
+          <Link to="/checkout" className="primary-cta">Continuar</Link>
           <div className="secondary-cta" onClick={emptyCart}>
             Vaciar carrito
           </div>

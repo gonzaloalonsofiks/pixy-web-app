@@ -1,10 +1,9 @@
 import React from "react";
-import ServicesList from "./ServicesList/ServicesList";
 import ItemList from "./ItemList/ItemList";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./ItemListContainer.css";
 import { getDocs, getFirestore, collection, query, where } from "firebase/firestore";
+import "./ItemListContainer.css";
 
 function ItemListContainer() {
   const [services, setServices] = useState([]);
@@ -43,7 +42,6 @@ function ItemListContainer() {
 
   return (
     <main className="container-services">
-      {/* <ServicesList serviceCount={3} /> */}
       {loading ? <p>Cargando...</p> : <ItemList services={services} />}
     </main>
   );
