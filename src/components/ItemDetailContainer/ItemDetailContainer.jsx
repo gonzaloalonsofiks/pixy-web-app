@@ -1,6 +1,6 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react/cjs/react.development";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 import ItemDetail from "./ItemDetail/ItemDetail";
 

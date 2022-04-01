@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "../../ItemListContainer/ItemCount/ItemCount";
 import { useCartContext } from "../../../contexts/cartContext";
-import { doc, getDoc, getFirestore } from "firebase/firestore";
 import "./ItemDetail.css";
 
 const ItemDetail = ({ singleService }) => {
@@ -12,10 +11,8 @@ const ItemDetail = ({ singleService }) => {
 
   const onAdd = (quantity) => {
     setCount(quantity);
-    addToList({ ...singleService, cantidad: quantity });
+    addToList({ ...singleService, quantity: quantity });
   };
-
-  console.log(singleService);
 
   return (
     <div className="itemDetail-container">
