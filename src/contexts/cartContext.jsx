@@ -73,6 +73,7 @@ function CartContextProvider({ children }) {
     const db = getFirestore();
     const queryCollection = collection(db, "orders");
     addDoc(queryCollection, order)
+      .then((response) => alert(response.id))
       .catch((error) => console.error(error))
       .finally(() => console.log("Terminado"));
   };

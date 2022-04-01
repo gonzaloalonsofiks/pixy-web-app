@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useCartContext } from "../../contexts/cartContext";
 
 function Checkout() {
@@ -40,8 +41,6 @@ function Checkout() {
           type="email"
           name="email-validation"
           placeholder="Repetir email"
-          /*           value={dataForm.email}
-          onChange={handleChange} */
         ></input>
 
         <br />
@@ -56,7 +55,10 @@ function Checkout() {
 
         <br />
 
-        <button>Finalizar compra</button>
+          <button>Finalizar compra</button>
+        <Link to="/thank-you">
+          <button>Ver detalles de mi orden</button>
+        </Link>
       </form>
     </div>
   );
