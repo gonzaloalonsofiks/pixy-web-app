@@ -1,5 +1,5 @@
 import { createContext, useState, useContext } from "react";
-import { addDoc, collection, getFirestore, query } from "firebase/firestore";
+import { addDoc, collection, getFirestore, Timestamp } from "firebase/firestore";
 
 const CartContext = createContext([]);
 
@@ -10,6 +10,7 @@ export const useCartContext = () => {
 
 function CartContextProvider({ children }) {
   const [cartList, setCartList] = useState([]);
+  const [orderID, setOrderID] = useState(null);
 
   const isInCart = (id) => {
     return cartList.some((item) => item.id === id);
@@ -61,6 +62,8 @@ function CartContextProvider({ children }) {
 
     order.total = totalCart();
 
+    order.date = Timestamp.fromDate(new Date())
+
     order.items = cartList.map((cartItem) => {
       const id = cartItem.id;
       const name = cartItem.name;
@@ -73,10 +76,11 @@ function CartContextProvider({ children }) {
     const db = getFirestore();
     const queryCollection = collection(db, "orders");
     addDoc(queryCollection, order)
-      .then((response) => alert(response.id))
+      .then((response) => setOrderID(response.id))
       .catch((error) => console.error(error))
       .finally(() => console.log("Terminado"));
   };
+
 
   const [dataForm, setDataForm] = useState({
     fname: "",
@@ -105,6 +109,7 @@ function CartContextProvider({ children }) {
         createOrder,
         dataForm,
         handleChange,
+        orderID,
       }}
     >
       {children}

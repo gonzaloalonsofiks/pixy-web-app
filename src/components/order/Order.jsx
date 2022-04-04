@@ -3,13 +3,13 @@ import {useCartContext} from "../../contexts/cartContext"
 
 function Order() {
 
-  const {dataForm} = useCartContext();
+  const {orderID} = useCartContext();
 
   return (
     <div>
-      <h1>` Tu orden ha sido recibida</h1>
+      <h1>Tu orden ha sido recibida</h1>
 
-      <p>Hemos recibido tu orden con el número XXX</p>
+      <p>Hemos recibido tu orden con el número {orderID}</p>
     </div>
   )
 }
