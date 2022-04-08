@@ -1,5 +1,11 @@
 import { createContext, useState, useContext } from "react";
-import { addDoc, collection, getFirestore, Timestamp } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  getFirestore,
+  Timestamp,
+} from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 const CartContext = createContext([]);
 
@@ -62,7 +68,7 @@ function CartContextProvider({ children }) {
 
     order.total = totalCart();
 
-    order.date = Timestamp.fromDate(new Date())
+    order.date = Timestamp.fromDate(new Date());
 
     order.items = cartList.map((cartItem) => {
       const id = cartItem.id;
@@ -79,8 +85,15 @@ function CartContextProvider({ children }) {
       .then((response) => setOrderID(response.id))
       .catch((error) => console.error(error))
       .finally(() => console.log("Terminado"));
+
+
+    redirection()
   };
 
+  const redirection = () => {
+    let navigate = useNavigate();
+    return navigate(`/order/${order.id}`);
+  };
 
   const [dataForm, setDataForm] = useState({
     fname: "",
@@ -110,6 +123,7 @@ function CartContextProvider({ children }) {
         dataForm,
         handleChange,
         orderID,
+        redirection,
       }}
     >
       {children}

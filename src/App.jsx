@@ -24,7 +24,7 @@ function App() {
                 <Route path={'/detalle/:detailID'} element={<ItemDetailContainer />} />
                 <Route path={'/cart'} element={<Cart />} />
                 <Route path={'/checkout'} element={<Checkout />} />
-                <Route path={'/thank-you'} element={<Order />} />
+                <Route path={'/order'} element={<Order />} />
 
                 <Route path='/*' element={<Navigate to='/' replace/> }/>
 
