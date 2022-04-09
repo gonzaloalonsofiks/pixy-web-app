@@ -16,7 +16,7 @@ export default function CartWidget() {
             alt="Ícono del carrito de compras"
           />
         ) : (
-          <div>
+          <div className="shoppingCart">
             <img
               src={shoppingCart}
               className="shoppingCart-icon"
