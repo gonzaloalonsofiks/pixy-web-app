@@ -11,6 +11,8 @@
     background-color: #fafafa;
     margin: 0 auto;
     max-width: 1120px;
+    display: flex;
+    justify-content: center;
 }
 
 #hero{
