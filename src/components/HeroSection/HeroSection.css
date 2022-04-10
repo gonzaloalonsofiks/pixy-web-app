@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+  .hero-image{
+    display: none;
+  }
+
+  .hero-column{
+    width: 100%;
+    padding: 25px;
+  }
+
+  .hero-title{
+    font-size: 45px;
+  }
+}

@@ -1,5 +1,6 @@
-import React from "react";
-import heroImg from "../../img/hero-img.png";
+import React from 'react'
+import heroImg from '../../img/hero-img.png'
+import './HeroSection.css'
 
 function HeroSection() {
   return (
