@@ -42,7 +42,7 @@ function ItemListContainer() {
 
   return (
     <main className="container-services">
-      {loading ? <p>Cargando...</p> : <ItemList services={services} />}
+      {loading ? <div>Cargando...</div> : <ItemList services={services} />}
     </main>
   );
 }
