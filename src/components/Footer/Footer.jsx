@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../img/Pixy Light.png";
+import './Footer.css'
 
 function Footer() {
   return (
