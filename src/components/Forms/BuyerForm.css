@@ -1,0 +1,25 @@
+form{
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  padding: 35px 0 0 0;
+}
+
+fieldset{
+  display: flex;
+  gap: 5%;
+  border: none;
+}
+
+input{
+  width: 300px;
+  height: 22px;
+  margin: 0 0 20px 0;
+  padding: 10px 15px;
+  border: 2px solid #5064DE;
+  border-radius: 22px;
+  color: #5064DE;
+  font-weight: 500;
+}

@@ -16,13 +16,13 @@ export default function CartWidget() {
             alt="Ícono del carrito de compras"
           />
         ) : (
-          <div className="shoppingCart">
+          <div className="shoppingCart-full">
             <img
               src={shoppingCart}
               className="shoppingCart-icon"
               alt="Ícono del carrito de compras"
             />
-            <p>{totalItems()}</p>
+            <p className="shoppingCart-number">{totalItems()}</p>
           </div>
         )}
       </div>

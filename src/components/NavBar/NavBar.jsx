@@ -25,7 +25,7 @@ function NavBar() {
                   <li className="menu-item">Inicio</li>
                 </NavLink>
                 <NavLink to={"/categoria/dominios"}>
-                  <li className="menu-item">Dominios y Hosting</li>
+                  <li className="menu-item">Dominios y Alojamiento</li>
                 </NavLink>
                 <NavLink to={"/categoria/desarrollo-web"}>
                   <li className="menu-item">Desarollo web</li>

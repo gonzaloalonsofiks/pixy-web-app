@@ -63,6 +63,7 @@ nav {
   letter-spacing: 1px;
   padding: 18px 16px;
   text-align: center;
+  border-bottom: 1px solid transparent;
 }
 
 .menu-items ul a {

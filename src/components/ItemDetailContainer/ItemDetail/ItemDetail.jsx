@@ -30,9 +30,9 @@ const ItemDetail = ({ singleService }) => {
           <span className="itemDetail-price">$ {singleService.price}</span>
         </div>
         {count ? (
-          <Link to="/cart">
+          <Link className="btn" to="/cart">
             {" "}
-            <p>Ir al carrito</p>
+            Ir al carrito
           </Link>
         ) : (
           <ItemCount init={1} limit={10} onAdd={onAdd} />
