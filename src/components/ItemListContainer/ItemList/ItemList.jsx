@@ -6,7 +6,7 @@ import '../ItemList/ItemList.css'
 function ItemList({services}) {
 
   return (
-    <div className='serviceList-container'>
+    <div className="serviceList-container">
         {services.map((service) =>
           <Item
             key={service.id}

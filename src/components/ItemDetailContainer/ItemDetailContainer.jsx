@@ -21,9 +21,14 @@ export const ItemDetailContainer = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       {loading ? (
-        <p>Cargando...</p>
+        <div className="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       ) : (
         <ItemDetail singleService={singleService} />
       )}

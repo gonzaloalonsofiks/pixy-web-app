@@ -57,7 +57,7 @@ function CartContextProvider({ children }) {
       0
     );
     return units;
-  };
+  }
 
   const createOrder = async (e) => {
     e.preventDefault();
@@ -86,8 +86,7 @@ function CartContextProvider({ children }) {
       .catch((error) => console.error(error))
       .finally(() => console.log("Terminado"));
 
-
-    redirection()
+    redirection();
   };
 
   const redirection = () => {
@@ -109,6 +108,32 @@ function CartContextProvider({ children }) {
     });
   };
 
+  const handleIncrement = (id) => {
+    let target = cartList.find((item) => item.id === id);
+    if (target.quantity < 15) {
+      let newCartList = cartList.map((item) => {
+        if (item.id === target.id) {
+          item.quantity = item.quantity + 1;
+        }
+        return item;
+      });
+      setCartList(newCartList);
+    }
+  };
+
+  const handleDecrement = (id) => {
+    let target = cartList.find((item) => item.id === id);
+    if (target.quantity > 1) {
+      let newCartList = cartList.map((item) => {
+        if (item.id === target.id) {
+          item.quantity = item.quantity - 1;
+        }
+        return item;
+      });
+      setCartList(newCartList);
+    }
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -124,6 +149,8 @@ function CartContextProvider({ children }) {
         handleChange,
         orderID,
         redirection,
+        handleDecrement,
+        handleIncrement,
       }}
     >
       {children}

@@ -23,7 +23,6 @@ function ItemCount({init, limit, onAdd}) {
             alert("No podemos agregar este producto a tu carrito")
         }
         else{
-            console.log(count + " unidad/es agregada/s al carrito.")
             onAdd(count)
         }
     }

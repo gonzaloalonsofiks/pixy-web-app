@@ -3,10 +3,13 @@ import BuyerForm from "../Forms/BuyerForm";
 import { useCartContext } from "../../contexts/cartContext";
 
 function Checkout() {
-  const { createOrder, redirection} = useCartContext();
+  const { createOrder, redirection } = useCartContext();
   return (
-    <div>
-      <BuyerForm />
+    <div className="checkout-container">
+      <h1>Finalizá tu compra</h1>
+      <div id="checkout-form">
+        <BuyerForm />
+      </div>
     </div>
   );
 }

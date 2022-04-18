@@ -2,7 +2,13 @@ import React from "react";
 import ItemList from "./ItemList/ItemList";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getDocs, getFirestore, collection, query, where } from "firebase/firestore";
+import {
+  getDocs,
+  getFirestore,
+  collection,
+  query,
+  where,
+} from "firebase/firestore";
 import "./ItemListContainer.css";
 
 function ItemListContainer() {
@@ -42,7 +48,16 @@ function ItemListContainer() {
 
   return (
     <main className="container-services">
-      {loading ? <p>Cargando...</p> : <ItemList services={services} />}
+      {loading ? (
+        <div className="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      ) : (
+        <ItemList services={services} />
+      )}
     </main>
   );
 }

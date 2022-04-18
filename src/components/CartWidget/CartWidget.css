@@ -1,7 +1,9 @@
 .shoppingCart-container{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
     border: solid 1px #fff;
     padding: 10px 20px;
     border-radius: 22px;
@@ -19,4 +21,14 @@
 .shoppingCart-icon{
     height: 24px;
     width: 24px;
+}
+
+.shoppingCart-full{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.shoppingCart-number{
+    width: 20px;
 }
