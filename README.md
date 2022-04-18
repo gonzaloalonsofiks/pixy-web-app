@@ -26,3 +26,6 @@ Backend simulado con Firebase y Firestore.
 Librería de íconos para React.
 ### React Hook Form: v 7.30
 Librería para manipular y validar formularios.
+
+
+#### Autor: Gonzalo Alonso Fiks
