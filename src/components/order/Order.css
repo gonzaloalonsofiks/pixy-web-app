@@ -1,0 +1,29 @@
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.order-title {
+  font-size: 36px;
+  color: #5064de;
+}
+
+.order-subtitle {
+  font-size: 28px;
+}
+
+.order-img {
+  height: 250px;
+  margin: 25px 0;
+}
+
+.order-text {
+  font-weight: 500;
+}
+
+.order-id {
+  color: #5064de;
+  font-weight: 700;
+}

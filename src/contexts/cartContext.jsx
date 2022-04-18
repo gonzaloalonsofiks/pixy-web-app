@@ -5,7 +5,6 @@ import {
   getFirestore,
   Timestamp,
 } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
 
 const CartContext = createContext([]);
 
@@ -57,10 +56,10 @@ function CartContextProvider({ children }) {
       0
     );
     return units;
-  }
+  };
 
-  const createOrder = async (e) => {
-    e.preventDefault();
+  const createOrder = () => {
+    /* e.preventDefault(); */
 
     let order = {};
 
@@ -71,12 +70,13 @@ function CartContextProvider({ children }) {
     order.date = Timestamp.fromDate(new Date());
 
     order.items = cartList.map((cartItem) => {
+      const key = cartItem.id;
       const id = cartItem.id;
       const name = cartItem.name;
       const quantity = cartItem.quantity;
       const subtotal = cartItem.price * cartItem.quantity;
 
-      return { id, name, quantity, subtotal };
+      return { key, id, name, quantity, subtotal };
     });
 
     const db = getFirestore();
@@ -84,14 +84,7 @@ function CartContextProvider({ children }) {
     addDoc(queryCollection, order)
       .then((response) => setOrderID(response.id))
       .catch((error) => console.error(error))
-      .finally(() => console.log("Terminado"));
-
-    redirection();
-  };
-
-  const redirection = () => {
-    let navigate = useNavigate();
-    return navigate(`/order/${order.id}`);
+      .finally(() => console.log("Order registered in the database"));
   };
 
   const [dataForm, setDataForm] = useState({
@@ -148,7 +141,6 @@ function CartContextProvider({ children }) {
         dataForm,
         handleChange,
         orderID,
-        redirection,
         handleDecrement,
         handleIncrement,
       }}

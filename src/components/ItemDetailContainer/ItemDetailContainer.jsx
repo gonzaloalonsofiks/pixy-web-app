@@ -30,7 +30,10 @@ export const ItemDetailContainer = () => {
           <div></div>
         </div>
       ) : (
-        <ItemDetail singleService={singleService} />
+        <div className="container-services">
+
+          <ItemDetail singleService={singleService} />
+        </div>
       )}
     </div>
   );

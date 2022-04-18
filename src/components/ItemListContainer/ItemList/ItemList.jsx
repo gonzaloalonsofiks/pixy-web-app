@@ -1,13 +1,11 @@
-import React from 'react'
-import Item from '../Item/Item'
-import '../ItemList/ItemList.css'
+import React from "react";
+import Item from "../Item/Item";
+import "../ItemList/ItemList.css";
 
-
-function ItemList({services}) {
-
+function ItemList({ services }) {
   return (
-    <div className="serviceList-container">
-        {services.map((service) =>
+      <div className="serviceList-container">
+        {services.map((service) => (
           <Item
             key={service.id}
             id={service.id}
@@ -17,11 +15,10 @@ function ItemList({services}) {
             icon={service.icon}
             img={service.img}
             category={service.category}
-          />)}
-    </div>
-  )
+          />
+        ))}
+      </div>
+  );
 }
 
-export default ItemList
-
-
+export default ItemList;

@@ -27,6 +27,11 @@ const ItemDetail = ({ singleService }) => {
         <div className="itemDetail-text">
           <h2>{singleService.name}</h2>
           <p>{singleService.description}</p>
+          <div className="support-message">
+            <div className="support-message-title">Soporte especializado</div>
+            <div>Este servicio cuenta con nuestro soporte técnico dedicado.</div>
+          </div>
+
           <span className="itemDetail-price">$ {singleService.price}</span>
         </div>
         {count ? (

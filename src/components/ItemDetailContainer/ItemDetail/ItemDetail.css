@@ -35,3 +35,16 @@
   font-size: 28px;
   font-weight: 700;
 }
+
+.support-message {
+  background-color: #5064de50;
+  padding: 15px 30px;
+  border-radius: 22px;
+  max-width: 65%;
+  margin: 0 0 20px 0;
+}
+
+.support-message-title{
+  font-weight: 700;
+  margin-bottom: none;
+}

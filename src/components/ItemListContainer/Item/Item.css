@@ -6,8 +6,9 @@
     margin: 25px 0px 25px 0px;
     width: 300px;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    flex-direction: column;
+    height: 300px;
 }
 
 
