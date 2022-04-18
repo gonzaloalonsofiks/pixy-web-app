@@ -1,67 +1,28 @@
-# Sobre el proyecto
+# Proyecto Final · ReactJS · Coder House
+
+Este sitio web es el resultado del Proyecto Final de React en Coder House.
+
+## Sobre el proyecto
 
 Este proyecto web, basado en React, es una réplica del sitio web de [Pixy](pixy.com.ar), e intenta replicar algunas de las funcionalidades del sitio actual.
 
-![Pixy web app](./public/ezgif.com-gif-maker.gif)
+## Instrucciones
 
+Se debe clonar el repositorio y correr el comando `npm start` para abrir la aplicación en modo de desarrollo.
 
-## Getting Started with Create React App
+Para ver el sitio, clickear en [http://localhost:3000](http://localhost:3000) y se abrirá en el navegador.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Dependencias
 
-## Available Scripts
+### React: v 18.0
+Librería principal del proyecto.
 
-In the project directory, you can run:
+### React Router Dom: v 6.3
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Librería utilizada para redireccionar y linkear secciones.
+### Firebase: v 9.6.9
+Backend simulado con Firebase y Firestore.
+### HeroIcons: v 1.0.6
+Librería de íconos para React.
+### React Hook Form: v 7.30
+Librería para manipular y validar formularios.
