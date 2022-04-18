@@ -12,10 +12,10 @@
     color: #fff;
 }
 
-.shoppingCart-container:hover{
-    background-color: #f46f34;
-    border: solid 1px #f46f34;
-    transition: 0.5s;
+.shoppingCart-container:hover {
+  background-color: #f46f34;
+  border: solid 1px #f46f34;
+  transition: 0.5s;
 }
 
 .shoppingCart-icon{
