@@ -21,7 +21,7 @@ function HeroSection() {
           </div>
         </div>
       </section>
-      <section id="webHosting" className="container container-services">
+      <section id="webHosting" className="container">
         <div id="services">
           <h2 className="services-title">Web hosting para tu sitio</h2>
           <p className="services-subtitle">

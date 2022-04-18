@@ -28,7 +28,7 @@ function ItemListContainer() {
       getDocs(queryFilter)
         .then((response) =>
           setServices(
-            response.docs.map((item) => ({ id: item.id, ...item.data() }))
+            response.docs.map((item) => ({key: toString(item.id), id: item.id, ...item.data() }))
           )
         )
         .catch((error) => console.log(error))
@@ -38,7 +38,7 @@ function ItemListContainer() {
       getDocs(queryCollection)
         .then((response) =>
           setServices(
-            response.docs.map((item) => ({ id: item.id, ...item.data() }))
+            response.docs.map((item) => ({key: toString(item.id), id: item.id, ...item.data() }))
           )
         )
         .catch((error) => console.log(error))
@@ -47,7 +47,7 @@ function ItemListContainer() {
   }, [categoryID]);
 
   return (
-    <main className="container-services">
+    <main className=" container-services">
       {loading ? (
         <div className="lds-ring">
           <div></div>
@@ -56,7 +56,12 @@ function ItemListContainer() {
           <div></div>
         </div>
       ) : (
-        <ItemList services={services} />
+        <div className="container-services">
+          <h1>Nuestros servicios</h1>
+          <ItemList services={services} />
+
+        </div>
+
       )}
     </main>
   );
